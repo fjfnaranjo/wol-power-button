@@ -7,6 +7,7 @@ ENV GRADLE_VERSION=8.6
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
+    librsvg2-bin \
  && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p $ANDROID_SDK_ROOT/cmdline-tools \
