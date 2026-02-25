@@ -11,10 +11,14 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = findViewById(R.id.mainButton);
-        button.setOnClickListener(v -> {
+        Button settingsButton = findViewById(R.id.settingsButton);
+        settingsButton.setOnClickListener(v -> {
             Intent intent = new Intent(this, SettingsActivity.class);
             startActivity(intent);
+        });
+
+        Button mainButton = findViewById(R.id.mainButton);
+        mainButton.setOnClickListener(v -> {
         });
     }
 }
