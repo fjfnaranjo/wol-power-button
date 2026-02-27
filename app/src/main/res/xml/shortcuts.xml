@@ -1,0 +1,13 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+  <shortcut
+    android:shortcutId="sendwol"
+    android:icon="@mipmap/ic_launcher"
+    android:shortcutShortLabel="@string/sendwol_shortcut_short_label"
+    android:shortcutLongLabel="@string/sendwol_shortcut_long_label">
+
+    <intent
+        android:action="android.intent.action.MAIN"
+        android:targetPackage="com.example.wolpowerbutton"
+        android:targetClass="com.example.wolpowerbutton.SendWolShortcutActivity" />
+  </shortcut>
+</shortcuts>
