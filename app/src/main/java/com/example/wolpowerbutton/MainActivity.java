@@ -15,6 +15,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setTitle(R.string.activity_title);
+
         Button settingsButton = findViewById(R.id.settingsButton);
         settingsButton.setOnClickListener(v -> {
             Intent intent = new Intent(this, SettingsActivity.class);
@@ -33,7 +35,7 @@ public class MainActivity extends Activity {
             ShortcutManager shortcutManager = getSystemService(ShortcutManager.class);
             ShortcutInfo shortcut = new ShortcutInfo.Builder(this, "sendwol_pinned")
                     .setShortLabel(getString(R.string.turn_on))
-                    .setLongLabel(getString(R.string.sendwol_shortcut_short_label))
+                    .setLongLabel(getString(R.string.turn_on))
                     .setIcon(Icon.createWithResource(this, R.mipmap.ic_launcher))
                     .setIntent(new Intent(this, SendWolShortcutActivity.class)
                             .setAction(SendWolReceiver.ACTION_SEND_WOL))

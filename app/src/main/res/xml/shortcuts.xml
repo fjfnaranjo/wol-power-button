@@ -2,7 +2,7 @@
   <shortcut
     android:shortcutId="sendwol"
     android:icon="@mipmap/ic_launcher"
-    android:shortcutShortLabel="@string/sendwol_shortcut_short_label"
+    android:shortcutShortLabel="@string/turn_on"
     android:shortcutLongLabel="@string/turn_on">
 
     <intent
