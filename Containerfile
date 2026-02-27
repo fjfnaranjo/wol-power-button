@@ -27,3 +27,9 @@ RUN curl -fsSL https://services.gradle.org/distributions/gradle-${GRADLE_VERSION
     && unzip /tmp/gradle.zip -d /opt \
     && ln -s /opt/gradle-${GRADLE_VERSION}/bin/gradle /usr/local/bin/gradle \
     && rm /tmp/gradle.zip
+
+RUN curl -LO https://github.com/google/google-java-format/releases/download/v1.34.1/google-java-format_linux-x86-64 \
+    && install google-java-format_linux-x86-64 /usr/local/bin/google-java-format \
+    && rm google-java-format_linux-x86-64
+
+RUN curl -LO https://github.com/ByteHamster/android-xml-formatter/releases/download/1.1.0/android-xml-formatter.jar

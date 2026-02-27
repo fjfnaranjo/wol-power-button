@@ -58,6 +58,17 @@ debug-run:
 debug-logcat:
 	adb logcat | grep com.example.wolpowerbutton
 
+.PHONY: format-javas
+format-javas:
+	$(cr_exex) google-java-format -i app/src/main/java/com/example/wolpowerbutton/*.java
+
+.PHONY: format-xmls
+format-xmls:
+	$(cr_exex) java -jar /android-xml-formatter.jar app/src/main/res/xml/* app/src/main/res/layout/* app/src/main/AndroidManifest.xml
+
+.PHONY: format
+format: format-javas format-xmls
+
 .PHONY: clean
 clean:
 	rm -rf app/build/outputs/apk/debug
