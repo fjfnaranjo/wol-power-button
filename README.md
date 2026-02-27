@@ -5,12 +5,6 @@ host.
 
 It uses a containerized build chain.
 
-## TODO
-
-- Create a app launcher icon to send the WOL request directly without
-  opening the app.
-- Publish to F-Droid.
-
 ## Acknowledgments
 
 - WOL magic package builder/sender code was taken from from
