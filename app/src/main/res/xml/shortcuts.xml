@@ -3,7 +3,7 @@
     android:shortcutId="sendwol"
     android:icon="@mipmap/ic_launcher"
     android:shortcutShortLabel="@string/sendwol_shortcut_short_label"
-    android:shortcutLongLabel="@string/sendwol_shortcut_long_label">
+    android:shortcutLongLabel="@string/turn_on">
 
     <intent
         android:action="android.intent.action.MAIN"

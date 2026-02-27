@@ -2,12 +2,12 @@
 <resources>
     <string name="app_name">WOL</string>
     <string name="settings">Settings</string>
-    <string name="turn_on">Turn On</string>
+    <string name="turn_on">Turn on</string>
     <string name="mac_address">MAC Address</string>
     <string name="broadcast_address">Broadcast Address</string>
     <string name="save">Save</string>
     <string name="error_invalid_mac">Invalid MAC address format</string>
     <string name="error_invalid_ip">Invalid IP address format</string>
     <string name="sendwol_shortcut_short_label">Send WOL</string>
-    <string name="sendwol_shortcut_long_label">Turn on</string>
+    <string name="create_shortcut">Create shortcut</string>
 </resources>
