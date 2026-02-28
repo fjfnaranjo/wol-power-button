@@ -6,7 +6,7 @@ cr_workspace=-w "/workspace"
 cr_gradle_cache=-v "$$(pwd)/.gradle/root-android:/root/.android"
 cr_android_cache=-v "$$(pwd)/.gradle/root-gradle:/root/.gradle"
 cr_volumes=-v "$$(pwd):/workspace" $(cr_workspace) $(cr_gradle_cache) $(cr_android_cache)
-cr_exex=$(cr_cmd) exec -ti $(cr_workspace) $(cr_name)
+cr_exex=$(cr_cmd) exec -ti $(cr_workspace) $(cr_extras) $(cr_name)
 
 .PHONY: all
 all:
